@@ -1,3 +1,4 @@
+package com.tang.atp;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.SpringApplication;
@@ -6,7 +7,6 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
 
 
 @EnableAsync

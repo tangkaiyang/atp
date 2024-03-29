@@ -5,7 +5,7 @@
     <parent>
         <artifactId>atp</artifactId>
         <groupId>com.tang</groupId>
-        <version>${project.release.version}</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -19,11 +19,11 @@
         </plugins>
     </build>
     <dependencies>
-        <dependency>
-            <groupId>com.tang</groupId>
-            <artifactId>atp-dao</artifactId>
-            <version>${project.release.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.tang</groupId>-->
+<!--            <artifactId>atp-dao</artifactId>-->
+<!--            <version>${project.release.version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -100,22 +100,22 @@
         <!--            <artifactId>pagehelper-spring-boot-starter</artifactId>-->
         <!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.tang</groupId>
-            <artifactId>atp-common</artifactId>
-            <version>${project.release.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.tang</groupId>
-            <artifactId>atp-service</artifactId>
-            <version>${project.release.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.tang</groupId>
-            <artifactId>atp-interior</artifactId>
-            <version>${project.release.version}</version>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.tang</groupId>-->
+<!--            <artifactId>atp-common</artifactId>-->
+<!--            <version>${project.release.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.tang</groupId>-->
+<!--            <artifactId>atp-service</artifactId>-->
+<!--            <version>${project.release.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.tang</groupId>-->
+<!--            <artifactId>atp-interior</artifactId>-->
+<!--            <version>${project.release.version}</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
 
             <dependency>
                 <groupId>com.xuxueli</groupId>
