@@ -1,0 +1,6 @@
+### kafka producer 配置开发
+spring.kafka:
+    producer:
+        bootstrap-servers: localhost:9097
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: org.apache.kafka.common.serialization.StringSerializer
