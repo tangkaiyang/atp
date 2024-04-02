@@ -15,9 +15,9 @@ server:
         max-threads: 300
 
 spring:
-    swagger:
-        enable: true        #为true时将开启swagger
-
+#    swagger:
+#        enable: true        #为true时将开启swagger
+#
     profiles:
         active: dev
     application:
@@ -29,24 +29,24 @@ spring:
         multipart:
             max-file-size: 10MB
             max-request-size: 10MB
-    #session使用redis进行储存
-    session:
-        store-type: REDIS
-    data:
-        redis:
-            repositories:
-                enabled: false
-
-mybatis:
-    mapper-locations: classpath*:mybatis/*.xml
-    type-aliases-package: com.tang.atp.dao.po
-
-#pagehelper
-pagehelper:
-    helperDialect: mysql
-    reasonable: false
-    supportMethodsArguments: true
-    params: count=countSql
+#    #session使用redis进行储存
+#    session:
+#        store-type: REDIS
+#    data:
+#        redis:
+#            repositories:
+#                enabled: false
+#
+#mybatis:
+#    mapper-locations: classpath*:mybatis/*.xml
+#    type-aliases-package: com.tang.atp.dao.po
+#
+##pagehelper
+#pagehelper:
+#    helperDialect: mysql
+#    reasonable: false
+#    supportMethodsArguments: true
+#    params: count=countSql
 
 
 

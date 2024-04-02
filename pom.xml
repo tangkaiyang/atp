@@ -13,12 +13,14 @@
 
 	<groupId>com.tang</groupId>
 	<artifactId>atp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<version>${project.release.version}</version>
 	<name>atp</name>
 	<description>Demo project for Spring Boot</description>
 
 	<modules>
 		<module>atp-timer</module>
+		<module>atp-dependencies</module>
 	</modules>
 
 	<properties>
@@ -27,20 +29,11 @@
 		<commons-io.version>2.4</commons-io.version>
 		<easyexcel.version>3.1.0</easyexcel.version>
 	</properties>
-	<repositories>
-		<repository>
-			<id>aliyun nexus</id>
-			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
+<!--	<repositories>-->
+<!--	</repositories>-->
 
-	</repositories>
-
-	<distributionManagement>
-
-	</distributionManagement>
+<!--	<distributionManagement>-->
+<!--	</distributionManagement>-->
 
 	<build>
 		<plugins>
@@ -314,5 +307,15 @@
 		</dependency>
 
 	</dependencies>
-
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.tang</groupId>
+				<artifactId>atp-dependencies</artifactId>
+				<version>${project.release.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
