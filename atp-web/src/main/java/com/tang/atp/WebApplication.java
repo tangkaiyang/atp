@@ -18,11 +18,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 //@EnableRedisHttpSession
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @ServletComponentScan
-public class TimerApplication {
+public class WebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TimerApplication.class, args);
-        System.out.println("-- api-定时任务服务-服务启动成功");
+        SpringApplication.run(WebApplication.class, args);
+        System.out.println("-- web-服务-服务启动成功");
 //        log.info("-- api-定时任务服务-服务启动成功");
     }
 }

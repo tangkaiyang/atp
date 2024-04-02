@@ -2,7 +2,7 @@
 <Configuration status="OFF">
     <properties>
         <!--定义变量,亦可以调用系统变量,比如${env:TESTLOG}/test/logs,其中TESTLOG是自己添加的系统环境变量  -->
-        <property name="LOG_HOME">/srv/www/logs/timer</property>
+        <property name="LOG_HOME">/srv/www/logs/web</property>
         <property name="LOG_PATTERN">%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %M() @%L - %msg%n</property>
     </properties>
 

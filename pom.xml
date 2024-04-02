@@ -20,6 +20,7 @@
 
 	<modules>
 		<module>atp-timer</module>
+		<module>atp-web</module>
 		<module>atp-dependencies</module>
 	</modules>
 
