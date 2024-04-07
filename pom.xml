@@ -20,8 +20,12 @@
 
 	<modules>
 		<module>atp-timer</module>
-		<module>atp-web</module>
+		<module>atp-common</module>
+		<module>atp-dao</module>
+		<module>atp-interior</module>
+		<module>atp-service</module>
 		<module>atp-dependencies</module>
+		<module>atp-manage</module>
 	</modules>
 
 	<properties>
@@ -30,11 +34,19 @@
 		<commons-io.version>2.4</commons-io.version>
 		<easyexcel.version>3.1.0</easyexcel.version>
 	</properties>
-<!--	<repositories>-->
-<!--	</repositories>-->
+	<repositories>
+		<repository>
+			<id>aliyun nexus</id>
+			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
 
-<!--	<distributionManagement>-->
-<!--	</distributionManagement>-->
+	<distributionManagement>
+
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -103,10 +115,10 @@
 		<!--        </dependency>-->
 
 		<!--refresh配置-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-context</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-context</artifactId>-->
+<!--		</dependency>-->
 
 		<!-- 添加spring-boot-starter-log4j2的依赖包-->
 		<dependency>

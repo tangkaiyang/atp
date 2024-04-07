@@ -1,0 +1,52 @@
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="config.properties"/>
+    <classPathEntry
+            location="${mysql-jar-location}"/>
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+
+        <!-- 自定义插件，自动为entity生成swagger2文档-->
+        <plugin type="com.tang.generator.MybatisGenerator">
+            <property name="apiModelAnnotationPackage" value="io.swagger.annotations.ApiModel"/>
+            <property name="apiModelPropertyAnnotationPackage" value="io.swagger.annotations.ApiModelProperty"/>
+            <property name="lombokDataAnnotationPackage" value="lombok.Data"/>
+        </plugin>
+
+        <jdbcConnection driverClass="${jdbc.driverClass}"
+                connectionURL="${jdbc.url}"
+                userId="${jdbc.user}"
+                password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="${modelTargetPackage}"
+                targetProject="nuonuo-csp-dao/src/main/java"/>
+
+        <sqlMapGenerator targetPackage="${sqlMapTargetPackage}"
+                targetProject="nuonuo-csp-dao/src/main/resources"/>
+
+        <javaClientGenerator targetPackage="${daoTargetPackage}"
+                targetProject="nuonuo-csp-dao/src/main/java"
+                type="XMLMAPPER"/>
+
+
+        <table tableName="sys_reminder_data">
+            <generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        </table>
+<!--        <table tableName="sys_product_parameter">-->
+<!--            <generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
+<!--        </table>-->
+<!--        <table tableName="sys_user">-->
+<!--            <generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
+<!--        </table>-->
+
+    </context>
+</generatorConfiguration>

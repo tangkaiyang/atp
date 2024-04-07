@@ -1,9 +1,9 @@
 #开发/测试/生产环境分别对应dev/test/pro
 #基础配置保存在application.yml中，因环境会变更的配置保存在对应的application-xxx.yml中
 server:
-    port: 8896
+    port: 8083
     servlet:
-        context-path: /web
+        context-path: /timer
         session:
             cookie:
                 http-only: true
@@ -21,7 +21,7 @@ spring:
     profiles:
         active: dev
     application:
-        name: atp-web    # 项目名称尽量用小写(不能访问)
+        name: atp-timer    # 项目名称尽量用小写(不能访问)
     jackson:
         dateFormat: yyyy-MM-dd HH:mm:ss
         timeZone: GMT+8

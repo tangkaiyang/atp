@@ -2,7 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>com.tang</groupId>
     <artifactId>atp-dependencies</artifactId>
     <packaging>pom</packaging>
     <version>${project.release.version}</version>
@@ -47,14 +47,8 @@
         <log4j2.version>2.17.1</log4j2.version>
 
 
-        <jingwei.es.sdk.version>1.0.8</jingwei.es.sdk.version>
 
-        <jingwei.kafka-core.version>1.1.2</jingwei.kafka-core.version>
-        <jingwei.kafka.version>1.1.2</jingwei.kafka.version>
-        <jingwei.version>1.0.15</jingwei.version>
         <curator.version>4.0.1</curator.version>
-        <jingwei-tracer.version>1.0.6</jingwei-tracer.version>
-        <workbench.api.version>1.3.0</workbench.api.version>
 
         <mockito.version>2.23.4</mockito.version>
         <powermock.version>2.0.2</powermock.version>
